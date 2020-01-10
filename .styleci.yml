@@ -10,7 +10,6 @@ disabled:
   - blank_line_after_opening_tag
   - short_array_syntax
   - no_singleline_whitespace_before_semicolons
-  - blank_line_before_declare
 
 finder:
   exclude:
