@@ -2,9 +2,9 @@
 
 namespace Apsg\ZHP\Stopnie;
 
-use Illuminate\Validation\Rule;
+use Illuminate\Contracts\Validation\Rule;
 
-class StopnieRule extends Rule
+class StopnieRule implements Rule
 {
     public function passes($attribute, $value) : bool
     {

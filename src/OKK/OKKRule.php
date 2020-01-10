@@ -2,9 +2,9 @@
 
 namespace Apsg\ZHP\OKK;
 
-use Illuminate\Validation\Rule;
+use Illuminate\Contracts\Validation\Rule;
 
-class OKKRule extends Rule
+class OKKRule implements Rule
 {
     public function passes($attribute, $value) : bool
     {
