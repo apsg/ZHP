@@ -5,7 +5,9 @@
 [![Build Status][ico-travis]][link-travis]
 [![StyleCI][ico-styleci]][link-styleci]
 
-This is where your description should go. Take a look at [contributing.md](contributing.md) to see a to do list.
+Metapakiet pomocniczy dla różnych projektów dotyczących ZHP. Zawiera podstawowe informacje jak dane chorągwiach, stopniach czy odznakach wraz z klasami pomocniczymi do ich wykorzystania oraz regułami.
+
+Stworzony dla Laravela 5.5+, ale może działać również jako pakiet pomocniczy w innych projektach.
 
 ## Installation
 
