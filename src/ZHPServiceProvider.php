@@ -4,7 +4,7 @@ namespace Apsg\ZHP;
 
 use Illuminate\Support\ServiceProvider;
 
-class ZHPServiceProvider extends ServiceProvider
+class ZhpServiceProvider extends ServiceProvider
 {
     /**
      * Perform post-registration booting of services.
