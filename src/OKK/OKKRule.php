@@ -1,10 +1,10 @@
 <?php
 
-namespace Apsg\ZHP\Stopnie;
+namespace Apsg\ZHP\OKK;
 
 use Illuminate\Validation\Rule;
 
-class StopnieRule extends Rule
+class OKKRule extends Rule
 {
     public function passes($attribute, $value) : bool
     {
@@ -12,11 +12,11 @@ class StopnieRule extends Rule
             return false;
         }
 
-        return in_array((int)$value, array_keys(StopnieHelper::ALL));
+        return in_array((int)$value, array_keys(OKKHelper::ALL));
     }
 
     public function message() : string
     {
-        return 'Nieprawidłowy stopień.';
+        return 'Nieprawidłowa odznaka.';
     }
 }
