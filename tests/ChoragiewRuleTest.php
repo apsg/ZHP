@@ -1,8 +1,7 @@
 <?php
 namespace Apsg\ZHP\Tests;
 
-use Apsg\ZHP\Rules\ChoragiewRule;
-use Apsg\ZHP\ZHP;
+use Apsg\ZHP\Choragwie\ChoragiewRule;
 use Orchestra\Testbench\TestCase;
 
 class ChoragiewRuleTest extends TestCase
@@ -44,7 +43,7 @@ class ChoragiewRuleTest extends TestCase
             [-1, false],
             ['abc', false],
             [null, false],
-            ['1', true]
+            ['1', true],
         ];
     }
 }
