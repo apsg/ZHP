@@ -1,4 +1,5 @@
 <?php
+
 namespace Apsg\ZHP;
 
 abstract class ZHP
