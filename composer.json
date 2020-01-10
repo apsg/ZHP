@@ -1,16 +1,19 @@
 {
     "name": "apsg/zhp",
     "description": ":description",
-    "license": "license",
+    "license": "MIT",
     "authors": [
         {
-            "name": "author name",
-            "email": "author email",
-            "homepage": "author homepage"
+            "name": "Szymon Gackowski",
+            "email": "szymon@gackowski.edu.pl",
+            "homepage": "http://gackowski.edu.pl"
         }
     ],
     "homepage": "https://github.com/apsg/zhp",
-    "keywords": ["Laravel", "ZHP"],
+    "keywords": [
+        "Laravel",
+        "ZHP"
+    ],
     "require": {
         "illuminate/support": "~5|~6"
     },
@@ -39,5 +42,8 @@
                 "ZHP": "Apsg\\ZHP\\Facades\\ZHP"
             }
         }
+    },
+    "scripts": {
+        "test": "./vendor/bin/phpunit"
     }
 }
