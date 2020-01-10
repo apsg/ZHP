@@ -6,16 +6,16 @@ use Illuminate\Contracts\Validation\Rule;
 
 class StopnieRule implements Rule
 {
-    public function passes($attribute, $value) : bool
+    public function passes($attribute, $value): bool
     {
-        if (!is_numeric($value)) {
+        if (! is_numeric($value)) {
             return false;
         }
 
-        return in_array((int)$value, array_keys(StopnieHelper::ALL));
+        return in_array((int) $value, array_keys(StopnieHelper::ALL));
     }
 
-    public function message() : string
+    public function message(): string
     {
         return 'Nieprawidłowy stopień.';
     }

@@ -16,9 +16,9 @@ abstract class OKKHelper
     const SOKK = 2;
     const ZOKK = 3;
 
-    public static function name(int $id) : string
+    public static function name(int $id): string
     {
-        if (!array_key_exists($id, self::ALL)) {
+        if (! array_key_exists($id, self::ALL)) {
             return '';
         }
 

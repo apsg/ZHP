@@ -19,7 +19,7 @@ abstract class StopnieHelper
     const PHM = 2;
     const HM = 3;
 
-    public static function name(int $id, int $gender = null) : string
+    public static function name(int $id, int $gender = null): string
     {
         if ($gender === null || $id === self::NONE) {
             return self::ALL[$id];
