@@ -4,5 +4,5 @@ namespace Apsg\ZHP;
 
 class ZHP
 {
-    
+    //
 }
