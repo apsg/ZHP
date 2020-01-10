@@ -31,7 +31,7 @@ class ZHPServiceProvider extends ServiceProvider
      */
     public function register()
     {
-        $this->mergeConfigFrom(__DIR__.'/../config/zhp.php', 'zhp');
+        $this->mergeConfigFrom(__DIR__ . '/../config/zhp.php', 'zhp');
 
         // Register the service the package provides.
         $this->app->singleton('zhp', function ($app) {
@@ -48,7 +48,7 @@ class ZHPServiceProvider extends ServiceProvider
     {
         return ['zhp'];
     }
-    
+
     /**
      * Console-specific booting.
      *
@@ -58,7 +58,7 @@ class ZHPServiceProvider extends ServiceProvider
     {
         // Publishing the configuration file.
         $this->publishes([
-            __DIR__.'/../config/zhp.php' => config_path('zhp.php'),
+            __DIR__ . '/../config/zhp.php' => config_path('zhp.php'),
         ], 'zhp.config');
 
         // Publishing the views.
