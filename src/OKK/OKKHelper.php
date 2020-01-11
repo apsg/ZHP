@@ -2,8 +2,12 @@
 
 namespace Apsg\ZHP\OKK;
 
+use Apsg\ZHP\HasNamesTrait;
+
 abstract class OKKHelper
 {
+    use HasNamesTrait;
+
     const ALL = [
         self::NONE => 'Brak',
         self::BOKK => 'Brązowa',
@@ -15,13 +19,4 @@ abstract class OKKHelper
     const BOKK = 1;
     const SOKK = 2;
     const ZOKK = 3;
-
-    public static function name(int $id): string
-    {
-        if (! array_key_exists($id, self::ALL)) {
-            return '';
-        }
-
-        return self::ALL[$id];
-    }
 }

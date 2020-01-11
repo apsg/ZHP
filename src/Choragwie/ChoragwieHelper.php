@@ -2,8 +2,12 @@
 
 namespace Apsg\ZHP\Choragwie;
 
+use Apsg\ZHP\HasNamesTrait;
+
 abstract class ChoragwieHelper
 {
+    use HasNamesTrait;
+
     const ALL = [
         self::NONE              => 'Brak',
         self::BIALOSTOCKA       => 'Białostocka',
